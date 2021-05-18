@@ -1,0 +1,11 @@
+shared:
+  image: node:12
+  steps:
+    - echo: echo hi
+jobs:
+  main:
+    requires: [~commit, ~pr]
+  internal_fork:
+    requires: [main]
+  join_job:
+    requires: [internal_fork, sd@9050:external_fork, sd@9049:external_fork]
