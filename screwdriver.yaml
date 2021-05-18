@@ -9,3 +9,5 @@ jobs:
     requires: [main]
   join_job:
     requires: [internal_fork, sd@3:external_fork, sd@4:external_fork]
+  join_job1:
+    requires: [internal_fork, sd@3:external_fork]
