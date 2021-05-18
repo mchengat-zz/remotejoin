@@ -11,3 +11,5 @@ jobs:
     requires: [internal_fork, sd@3:external_fork, sd@4:external_fork]
   join_job1:
     requires: [internal_fork, sd@4:external_fork]
+  no_join:
+    requires: [internal_fork]
