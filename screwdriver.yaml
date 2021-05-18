@@ -1,7 +1,7 @@
 shared:
   image: node:12
   steps:
-    - echo: sleep 22; echo hihihi
+    - echo: sleep 22; echo hihi
 jobs:
   main:
     requires: [~commit, ~pr]
