@@ -7,9 +7,5 @@ jobs:
     requires: [~commit, ~pr]
   internal_fork:
     requires: [main]
-  join_job:
-    requires: [internal_fork, sd@2:external_fork, sd@3:external_fork]
-  join_job1:
-    requires: [internal_fork, sd@3:external_fork]
   no_join:
     requires: [internal_fork]
